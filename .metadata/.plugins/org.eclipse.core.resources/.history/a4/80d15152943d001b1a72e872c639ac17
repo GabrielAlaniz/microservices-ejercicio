@@ -1,0 +1,5 @@
+package com.cursomicroserv.microservicios.commons.alumnos.models.entity;
+
+public class Alumno {
+
+}

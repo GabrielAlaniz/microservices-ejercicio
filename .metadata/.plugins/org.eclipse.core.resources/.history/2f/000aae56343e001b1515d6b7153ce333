@@ -1,0 +1,56 @@
+package com.cursomicroserv.microservicios.app.usuarios.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.cursomicroserv.microservicios.app.usuarios.models.entity.Alumno;
+import com.cursomicroserv.microservicios.app.usuarios.repository.AlumnoRepository;
+import com.google.common.base.Optional;
+
+@Service
+public class AlumnoServiceImpl implements AlumnoService {
+	
+	@Autowired
+	protected AlumnoRepository repository;
+	
+	@Override
+	@Transactional
+	public Iterable<Alumno> findAll() {
+		return repository.findAll();
+	}
+
+	@Override
+	@Transactional
+	public Optional<Alumno> findById(Long id) {
+		return repository.findById(id);
+	}
+
+	@Override
+	@Transactional
+	public Alumno save(Alumno alumno) {
+		return repository.save(alumno);
+	}
+
+	@Override
+	@Transactional
+	public Alumno update(Long id, Alumno alumno) {
+		return null;
+	}
+
+	@Override
+	@Transactional
+	public boolean deleteById(Long id) throws Exception{
+		try {
+			if(repository.existsById(id)) {
+				repository.deleteById(id);
+				return true;
+			} else {
+				throw new Exception();
+			}
+		} catch(Exception e) {
+			throw new Exception(e.getMessage());
+		}
+	}
+	
+}
