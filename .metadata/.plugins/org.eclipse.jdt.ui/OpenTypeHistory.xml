@@ -7,4 +7,5 @@
 <typeInfo handle="=microservicio-cursos/C:\/Program Files\/Java\/jre1.8.0_271\/lib\/rt.jar=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;javax.sql(CommonDataSource.class[CommonDataSource" modifiers="1537" timestamp="1604315658021"/>
 <typeInfo handle="=microservicio-cursos/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cursomicroserv.microservicios.app.cursos.service{CursoService.java[CursoService" modifiers="513" timestamp="1608036532915"/>
 <typeInfo handle="=commons-microservicios/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.microservicio.commons.services{CommonServiceImpl.java[CommonServiceImpl" modifiers="1" timestamp="1608002967425"/>
+<typeInfo handle="=commons-microservicios/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.microservicio.commons.controllers{CommonController.java[CommonController" modifiers="1" timestamp="1608002967390"/>
 </typeInfoHistroy>
