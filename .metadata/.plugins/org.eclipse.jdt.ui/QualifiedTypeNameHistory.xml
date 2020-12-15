@@ -35,7 +35,11 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.usuarios.models.entity.Alumno"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+<fullyQualifiedTypeName name="com.microservicio.commons.services.CommonServiceImpl"/>
+<fullyQualifiedTypeName name="com.microservicio.commons.services.CommonService"/>
+<fullyQualifiedTypeName name="com.microservicio.commons.controllers.CommonController"/>
+<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.usuarios.models.entity.Alumno"/>
 </qualifiedTypeNameHistroy>
