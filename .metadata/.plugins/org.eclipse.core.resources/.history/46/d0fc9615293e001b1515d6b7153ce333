@@ -1,8 +1,0 @@
-package com.cursomicroserv.microservicios.app.usuarios.service;
-
-import com.cursomicroserv.microservicios.commons.alumnos.models.entity.Alumno;
-import com.cursomicroserv.microservicios.commons.services.CommonServiceImpl;
-
-public class AlumnoServiceImpl extends CommonServiceImpl<Alumno, Long> implements AlumnoService {
-
-}

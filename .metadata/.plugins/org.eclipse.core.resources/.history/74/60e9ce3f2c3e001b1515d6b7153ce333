@@ -1,5 +1,0 @@
-package com.cursomicroserv.microservicios.app.usuarios.service;
-
-public interface AlumnoService {
-
-}
