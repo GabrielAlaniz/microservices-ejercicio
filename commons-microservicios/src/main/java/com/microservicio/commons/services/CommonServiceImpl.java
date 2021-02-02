@@ -31,20 +31,20 @@ public class CommonServiceImpl<E, R extends PagingAndSortingRepository<E, Long>>
 		return repository.save(entity);
 	}
 
-	@Override
-	@Transactional
-	public boolean deleteById(Long id) throws Exception{
-		try {
-			if(repository.existsById(id)) {
-				repository.deleteById(id);
-				return true;
-			} else {
-				throw new Exception();
-			}
-		} catch(Exception e) {
-			throw new Exception(e.getMessage());
-		}
-	}
+//	@Override
+//	@Transactional
+//	public boolean deleteById(Long id) throws Exception{
+//		try {
+//			if(repository.existsById(id)) {
+//				repository.deleteById(id);
+//				return true;
+//			} else {
+//				throw new Exception();
+//			}
+//		} catch(Exception e) {
+//			throw new Exception(e.getMessage());
+//		}
+//	}
 
 	@Override
 	@Transactional
@@ -52,7 +52,10 @@ public class CommonServiceImpl<E, R extends PagingAndSortingRepository<E, Long>>
 		return repository.findAll(pageable);
 	}
 
-
-	
+	@Override
+	@Transactional
+	public void deleteById(Long id) {
+		repository.deleteById(id);
+	}
 	
 }

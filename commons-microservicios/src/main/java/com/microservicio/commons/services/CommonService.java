@@ -10,5 +10,6 @@ public interface CommonService<E> {
 	public Page<E> findAll(Pageable pageable);
 	public Optional<E> findById(Long id);
 	public E save(E entity);
-	public boolean deleteById(Long id) throws Exception;
+//  public boolean deleteById(Long id) throws Exception;
+	public void deleteById(Long id);
 }

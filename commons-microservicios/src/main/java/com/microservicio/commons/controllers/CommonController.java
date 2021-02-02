@@ -2,6 +2,7 @@ package com.microservicio.commons.controllers;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.microservicio.commons.services.CommonService;
@@ -36,7 +36,11 @@ public class CommonController<E, S extends CommonService<E>> {
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<?> getOne(@PathVariable Long id){
-		return ResponseEntity.status(HttpStatus.OK).body(service.findById(id));
+		Optional<E> o = service.findById(id);
+		if(!o.isPresent()) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok(o.get());
 	}
 	
 	@PostMapping("")

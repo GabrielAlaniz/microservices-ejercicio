@@ -1,78 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<<<<<<< Updated upstream
-<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.commons.services.CommonServiceImpl"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.commons.alumnos.models.entity.Alumno"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.commons.repository.CommonRepository"/>
-<fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
-<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.usuarios.repository.AlumnoRepository"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.usuarios.service.AlumnoService"/>
-<fullyQualifiedTypeName name="com.google.common.base.Optional"/>
-=======
->>>>>>> Stashed changes
+<fullyQualifiedTypeName name="javax.persistence.Lob"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
-<fullyQualifiedTypeName name="com.microservicio.commons.services.CommonServiceImpl"/>
-<fullyQualifiedTypeName name="com.microservicio.commons.services.CommonService"/>
-<fullyQualifiedTypeName name="com.microservicio.commons.controllers.CommonController"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.usuarios.models.entity.Alumno"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.cursos.repository.CursoRepository"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.cursos.models.entity.Curso"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.cursos.service.CursoService"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-<fullyQualifiedTypeName name="com.microservicio.commons.alumnos.models.entity.Alumno"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
-<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.ByteArrayResource"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
-<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
-<fullyQualifiedTypeName name="javax.persistence.PrePersist"/>
-<fullyQualifiedTypeName name="lombok.Getter"/>
-<fullyQualifiedTypeName name="lombok.Setter"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.examenes.models.entity.Examen"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.netflix.zuul.EnableZuulProxy"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.cursos.clients.RespuestaFeignClient"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
-<fullyQualifiedTypeName name="javax.persistence.Id"/>
-<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
-<fullyQualifiedTypeName name="javax.persistence.FetchType"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
-<fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.commons.examenes.models.entity.Asignatura"/>
-<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.examenes.models.repository.AsignaturaRepository"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-<fullyQualifiedTypeName name="java.util.Optional"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
-<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
-<<<<<<< Updated upstream
-=======
-<fullyQualifiedTypeName name="javax.validation.constraints.Email"/>
-<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
-<fullyQualifiedTypeName name="javax.validation.constraints.NotEmpty"/>
-<fullyQualifiedTypeName name="org.springframework.validation.annotation.Validated"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="javax.validation.Valid"/>
-<fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
-<fullyQualifiedTypeName name="org.springframework.data.repository.PagingAndSortingRepository"/>
+<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.cursos.models.entity.CursoAlumno"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.microservicio.commons.alumnos.models.entity.Alumno"/>
+<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.cursos.clients.AlumnoFeignClient"/>
+<fullyQualifiedTypeName name="java.util.Optional"/>
 <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
-<fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
->>>>>>> Stashed changes
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Modifying"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.cursomicroserv.microservicios.app.usuarios.client.CursoFeignClient"/>
+<fullyQualifiedTypeName name="javax.persistence.Transient"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>
