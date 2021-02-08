@@ -29,12 +29,12 @@ public class CursoServiceImpl extends CommonServiceImpl<Curso, CursoRepository> 
 	}
 
 	@Override
-	public Iterable<Long> obtenerExamenesIdsConRespuestasAlumno(Long alumnoId) {
+	public List<Long> obtenerExamenesIdsConRespuestasAlumno(Long alumnoId) {
 		return client.obtenerExamenesIdsConRespuestasAlumno(alumnoId);
 	}
 
 	@Override
-	public Iterable<Alumno> obtenerAlumnosXCurso(List<Long> ids) {
+	public List<Alumno> obtenerAlumnosXCurso(List<Long> ids) {
 		return clientAlumno.obtenerAlumnosXCurso(ids);
 	}
 

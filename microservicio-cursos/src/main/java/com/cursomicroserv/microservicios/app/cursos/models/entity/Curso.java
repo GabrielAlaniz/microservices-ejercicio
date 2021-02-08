@@ -39,6 +39,7 @@ public class Curso {
 	@NotEmpty
 	@Column(name="nombre")
 	private String nombre;
+	
 	@Column(name="create_at")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createAt;

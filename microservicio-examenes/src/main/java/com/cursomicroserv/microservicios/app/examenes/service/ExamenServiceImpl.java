@@ -29,5 +29,11 @@ public class ExamenServiceImpl extends CommonServiceImpl<Examen, ExamenRepositor
 	public List<Asignatura> findAllAsignaturas() {
 		return (List<Asignatura>) asignaturaRepository.findAll();
 	}
+
+	@Override
+	@Transactional
+	public List<Long> findExamenesIdConRtaByPreguntaIds(List<Long> preguntaIds) {
+		return repository.findExamenesIdConRtaByPreguntaIds(preguntaIds);
+	}
 	
 }

@@ -1,5 +1,6 @@
 package com.microservicio.commons.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,8 @@ public class CommonServiceImpl<E, R extends PagingAndSortingRepository<E, Long>>
 	
 	@Override
 	@Transactional
-	public Iterable<E> findAll() {
-		return repository.findAll();
+	public List<E> findAll() {
+		return (List<E>) repository.findAll();
 	}
 
 	@Override

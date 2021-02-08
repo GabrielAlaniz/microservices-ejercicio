@@ -12,5 +12,5 @@ import com.microservicio.commons.alumnos.models.entity.Alumno;
 public interface AlumnoFeignClient {
 	
 	@GetMapping("/alumnos-por-curso")
-	public Iterable<Alumno> obtenerAlumnosXCurso(@RequestParam List<Long> ids);
+	public List<Alumno> obtenerAlumnosXCurso(@RequestParam List<Long> ids);
 }

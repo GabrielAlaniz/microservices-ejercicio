@@ -1,5 +1,7 @@
 package com.cursomicroserv.microservicios.app.cursos.clients;
 
+import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,6 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface RespuestaFeignClient {
 	
 	@GetMapping("/alumno/{alumnoId}/examenes-respondidos")
-	public Iterable<Long> obtenerExamenesIdsConRespuestasAlumno(@PathVariable Long alumnoId);
+	public List<Long> obtenerExamenesIdsConRespuestasAlumno(@PathVariable Long alumnoId);
 	
 }

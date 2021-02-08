@@ -1,12 +1,16 @@
 package com.cursomicroserv.microservicios.app.respuestas.service;
 
+import java.util.List;
+
 import com.cursomicroserv.microservicios.app.respuestas.models.entity.Respuesta;
 
 public interface RespuestaService {
 	
-	public Iterable<Respuesta> saveAll(Iterable<Respuesta> respuestas);
+	public List<Respuesta> saveAll(List<Respuesta> respuestas);
 	
-	public Iterable<Respuesta> findRespuestaByAlumnoByExamen(Long alumnoId, Long examenId);
+	public List<Respuesta> findRespuestaByAlumnoByExamen(Long alumnoId, Long examenId);
 	
-	public Iterable<Long> findExamenesIdConRtaXAlumno(Long alumnoId);
+	public List<Long> findExamenesIdConRtaXAlumno(Long alumnoId);
+	
+	public List<Respuesta> findByAlumnoId(Long alumnoId);
 }

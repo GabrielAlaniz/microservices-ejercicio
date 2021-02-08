@@ -22,24 +22,25 @@ public class RespuestaController {
 	private RespuestaService service;
 	
 	@PostMapping
-	public ResponseEntity<?> crear(@RequestBody Iterable<Respuesta> respuestas){
+	public ResponseEntity<?> crear(@RequestBody List<Respuesta> respuestas){
 		respuestas = ((List<Respuesta>)respuestas).stream().map(r -> {
 			r.setAlumnoId(r.getAlumno().getId());
+			r.setPreguntaId(r.getPregunta().getId());
 			return r;
 		}).collect(Collectors.toList());
-		Iterable<Respuesta> respuestasDb = service.saveAll(respuestas);
+		List<Respuesta> respuestasDb = service.saveAll(respuestas);
 		return ResponseEntity.status(HttpStatus.CREATED).body(respuestasDb);
 	}
 	
 	@GetMapping("/alumno/{alumnoId}/examen/{examenId}")
 	public ResponseEntity<?> obtenerRtaXAlumnoXExamen(@PathVariable Long alumnoId, @PathVariable Long examenId){
-		Iterable<Respuesta> respuestas = service.findRespuestaByAlumnoByExamen(alumnoId, examenId);
+		List<Respuesta> respuestas = service.findRespuestaByAlumnoByExamen(alumnoId, examenId);
  		return ResponseEntity.ok(respuestas);
 	}
 	
 	@GetMapping("/alumno/{alumnoId}/examenes-respondidos")
-	public ResponseEntity<?> obtenerExamenesIdsConRespuestasAlumno(Long alumnoId) {
-		Iterable<Long> examenesIds = service.findExamenesIdConRtaXAlumno(alumnoId);
+	public ResponseEntity<?> obtenerExamenesIdsConRespuestasAlumno(@PathVariable Long alumnoId) {
+		List<Long> examenesIds = service.findExamenesIdConRtaXAlumno(alumnoId);
 		return ResponseEntity.ok(examenesIds);
 	}
 }
